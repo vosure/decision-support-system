@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.homeController">
+    <children>
+        <GridPane fx:id="alternativesGridPane" alignment="CENTER" layoutX="16.0" layoutY="112.0" prefHeight="441.0" prefWidth="331.0">
+        </GridPane>
+      <GridPane fx:id="criteriaGridPane" alignment="CENTER" layoutX="392.0" layoutY="111.0" prefHeight="441.0" prefWidth="331.0" />
+      <Label layoutX="150.0" layoutY="21.0" text="Альтернативы" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Label layoutX="522.0" layoutY="21.0" text="Критерии">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="16.0" layoutY="566.0" mnemonicParsing="false" onAction="#next" prefHeight="25.0" prefWidth="702.0" text="Далее">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="16.0" layoutY="52.0" mnemonicParsing="false" onAction="#addAlternative" prefHeight="25.0" prefWidth="331.0" text="Добавить Альтернативу" />
+      <Button layoutX="16.0" layoutY="77.0" mnemonicParsing="false" onAction="#removeAlternative" prefHeight="25.0" prefWidth="331.0" text="Удалить Альтернативу" />
+      <Button layoutX="392.0" layoutY="52.0" mnemonicParsing="false" onAction="#addCriterion" prefHeight="25.0" prefWidth="331.0" text="Добавить Критерий" />
+      <Button layoutX="392.0" layoutY="77.0" mnemonicParsing="false" onAction="#removeCriterion" prefHeight="25.0" prefWidth="331.0" text="Удалить Критерий" />
+      <Button layoutY="1.0" mnemonicParsing="false" onAction="#showReference" prefHeight="25.0" prefWidth="71.0" text="Справка" />
+    </children>
+</AnchorPane>
